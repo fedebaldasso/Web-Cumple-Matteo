@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Primer Añito - Matteo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=PT+Sans+Narrow:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/glider.css" />
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./css/countdown.css" />
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+
+<body class="body">
+  <div id="loader" class="loader">
+    <div class="texto-loader">
+      <img src="./assets/iconoloader.png" class="iconoloader" alt="Icono página loader">
+      <p class="titulo-loader">Bienvenidos a la invitación de mi cumple
+      </p>
+      <p class="info-loader">Vivi la experiencia con la música <br>Ajusta el volúmen</p>
+      <button class="mt-4 boton-loader" role="button" onclick="remove_loader();">¡ Vamos !</button>
+    </div>
+  </div>
+  <section>
+
+    <!-- Música -->
+    <audio id="audio" loop>
+      <source src="./audio/Funny Country by AudioCoffee.mp3" controls="controls" hidden type="audio/mp3">
+      <source src="audio/fun.ogg" controls="controls" hidden type="audio/ogg">
+    </audio>
+    <img id="boton" class="boton-musica" src="./assets/musica.png" alt="Icono de musica para pausar y reproducir">
+  </section>
+  <!-- Portada -->
+  <div class="bgimg-1">
+    <div class="caption">
+      <img class="imagendos" src="./assets/nombre.png" alt="Nombre">
+      <img class="imagentres" src="./assets/personajes.png" alt="Personajes">
+      <img class="imagenuno" src="./assets/flecha.png" alt="Nombre">
+    </div>
+  </div>
+
+
+  <!-- Contador -->
+  <section>
+    <div class="contador">
+      <h3 class="textocontador">Faltan...</h3>
+      <div class="container">
+        <div class='countdown' data-date="2024-08-03"></div>
+      </div>
+  </section>
+
+  <!-- Informacion del evento -->
+  <div class="iconoteinvito">
+    <img class="iconoprimero" src="./assets/iconoprimero.png" alt="icono">
+    <h2 class="texto-teinvito">Te invito a festejar mi cumple</h2>
+  </div>
+  <section class="infolugar">
+    <div class="dias">
+      <p class="tituloinfo"> Día:</p> <br>
+      <p class="textoinfo">Sábado 03 de Agosto de 2024</p> <br>
+      <p class="tituloinfo"> Horario:</p> <br>
+      <p class="textoinfo">12:30 hs a 17:00hs</p> <br>
+      <p class="tituloinfo"> Lugar:</p> <br>
+      <p class="textoinfo">Unión Judicial San Juan</p>
+      <br>
+      <p class="textoinfo">9 de Julio 728 Este - Ciudad.</p>
+
+    </div>
+
+    <div class="mapa">
+      <div class="item-mapa">
+        <iframe class="item-mapa"
+        src="https://www.google.com/maps/d/embed?mid=1GM17mO3Y9j3kaX0IzgQ94OOgphMhWtw&ehbc=2E312F" width="450" height="300" style="border:1; border-radius: 15px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+          <img class="personajesmapa" src="./assets/personajesmapa.png" alt="Personajes que sobresalen del mapa">
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Confirmación de asistencia -->
+  <section>
+    <div class="pregunta">
+      <p class="texto-pregunta">¿Venis?</p>
+      <div class="botones">
+      <a class="botonconfirmar"
+        href="https://api.whatsapp.com/send?phone=5492644605240&text=Hola!%20Quiero%20confirmar%20la%20asistencia%20al%20cumple%20de%20Matteo%20%F0%9F%92%9A%E2%9C%A8">Confirmar a mamá</a>
+        <a class="botonconfirmar"
+        href="https://api.whatsapp.com/send?phone=5492646274853&text=Hola!%20Quiero%20confirmar%20la%20asistencia%20al%20cumple%20de%20Matteo%20%F0%9F%92%9A%E2%9C%A8">Confirmar a papá</a></div>
+      <img class="imagencuatro" src="./assets/regalos1.png" alt="">
+    </div>
+  </section>
+
+  <!-- Galería de fotos -->
+  <section class="galeria">
+    <h6 class="texto-galeria">Mientras nos vamos preparando...</h6>
+    <div class="glider-contain">
+      <div class="glider">
+        <div><img alt="Foto 1" src="./assets/glider/1.jpeg"></div>
+        <div><img alt="Foto 2" src="./assets/glider/2.jpeg"></div>
+        <div><img alt="Foto 3" src="./assets/glider/3.jpeg"></div>
+        <div><img alt="Foto 4" src="img/glider/4.jpg"></div>
+        <div><img alt="Foto 5" src="img/glider/5.jpg"></div>
+        <div><img alt="Foto 6" src="img/glider/6.jpg"></div>
+      </div>
+      <button class="glider-prev">&laquo;</button>
+      <button class="glider-next">&raquo;</button>
+    </div>
+  </section>
+
+  <section class="container-regalos">
+    <h6 class="texto-regalos"> <br>¡Te espero para compartir este momento junto a vos!</h6>
+  </section>
+
+
+
+
+  <section class="creado">
+    <img class="imagenfinal" src="./assets/final.png" alt="">
+    <p class="texto-creado">Hecho con ♥ por Federico Baldasso</p>
+    <p class="texto-creado">&copy; 2024 </p>
+  </section>
+
+
+  <!-- Scripts -->
+  <script src="./js/glider.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+  <script src="./slick/slick.js?v2022" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="./js/countdown.js"></script>
+
+
+  <script>
+    window.addEventListener('load', function () {
+      document.querySelector('.glider').addEventListener('glider-slide-visible', function (event) {
+        var glider = Glider(this);
+        console.log('Slide Visible %s', event.detail.slide)
+      });
+      document.querySelector('.glider').addEventListener('glider-slide-hidden', function (event) {
+        console.log('Slide Hidden %s', event.detail.slide)
+      });
+      document.querySelector('.glider').addEventListener('glider-refresh', function (event) {
+        console.log('Refresh')
+      });
+      document.querySelector('.glider').addEventListener('glider-loaded', function (event) {
+        console.log('Loaded')
+      });
+
+      window._ = new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1, //'auto',
+        slidesToScroll: 1,
+        draggable: true,
+        scrollLock: false,
+        dots: '#dots',
+        rewind: true,
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        },
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToScroll: 1,
+              itemWidth: 300,
+              slidesToShow: 3,
+              exactWidth: true
+            }
+          },
+          {
+            breakpoint: 700,
+            settings: {
+              slidesToScroll: 1,
+              slidesToShow: 3,
+              dots: false,
+              arrows: false,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToScroll: 1,
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToScroll: 1,
+              slidesToShow: 1,
+              dots: false,
+              arrows: false,
+              scrollLock: true
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+  <script>
+    function remove_loader() {
+      let loader = document.getElementById("loader");
+      // remove loader element
+      loader.parentNode.removeChild(loader);
+      audio.play();
+    }
+  </script>
+
+  <script>
+    var boton = document.getElementById("boton");
+    boton.addEventListener("click", function () { });
+    var v = document.getElementsByTagName("audio")[0];
+    var sound = false;
+    v.pause();
+    this.innerHTML = ""; sound = false;
+    v.play();
+    this.innerHTML = "";
+    sound = true;
+
+    boton.addEventListener("click", function () {
+      if (!sound) {
+        v.play();
+        this.innerHTML = "";
+        sound = true;
+      } else {
+        v.pause();
+        this.innerHTML = "";
+        sound = false;
+      }
+    });
+  </script>
+
+
+  <script type="text/javascript">
+
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDO0xC01jpqb0TcPx8foCz9WTBWIRJuhFY",
+      authDomain: "cumple-matteo.firebaseapp.com",
+      projectId: "cumple-matteo",
+      storageBucket: "cumple-matteo.appspot.com",
+      messagingSenderId: "1052091205736",
+      appId: "1:1052091205736:web:0c4e6d689efb95eb5b53dd"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+
+  
+
+</html>
