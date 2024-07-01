@@ -6,6 +6,7 @@
   --colortercero: #f4a870;
   --colorcuarto: #ec7304;
   --colorquinto: #8abdf2;
+  --colorsexto: #1d858f;
 }
 
 .glider-contain {
@@ -63,7 +64,7 @@
 }
 
 .glider-slide img {
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 .glider::-webkit-scrollbar {
@@ -85,7 +86,7 @@
   border: 0;
   top: 20%;
   cursor: pointer;
-  color: var(--colorsegundo);
+  color: var(--colorsexto);
   opacity: 1;
   line-height: 1;
   transition: opacity 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67),
@@ -114,7 +115,7 @@
 .glider-next:hover,
 .glider-prev:focus,
 .glider-next:focus {
-  color: var(--colorcuarto);
+  color: var(--colorsexto);
 }
 
 .glider-next {
@@ -125,7 +126,7 @@
 .glider-next.disabled,
 .glider-prev.disabled {
   opacity: 0.25;
-  color: var(--colortercero);
+  color: var(--colorsexto);
   cursor: default;
 }
 
